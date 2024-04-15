@@ -1,8 +1,9 @@
 PATH
   remote: .
   specs:
-    dapr-client (0.4.0)
+    dapr-ruby (0.4.3)
       google-protobuf
+      grpc
 
 GEM
   remote: https://rubygems.org/
@@ -59,8 +60,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  dapr-client!
-  grpc
+  dapr-ruby!
   grpc-tools
   rake
   rspec
