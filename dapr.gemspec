@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "dapr/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "dapr-client"
+  spec.name          = "dapr-ruby"
   spec.version       = Dapr::VERSION
   spec.authors       = ["tjwp","bougyman"]
   spec.email         = ["tjwp@users.noreply.github.com","bougyman@users.noreply.github.com"]
