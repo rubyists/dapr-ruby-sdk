@@ -9,9 +9,29 @@ GEM
   specs:
     diff-lcs (1.5.1)
     google-protobuf (3.25.3)
+    google-protobuf (3.25.3-aarch64-linux)
+    google-protobuf (3.25.3-arm64-darwin)
+    google-protobuf (3.25.3-x86-linux)
+    google-protobuf (3.25.3-x86_64-darwin)
+    google-protobuf (3.25.3-x86_64-linux)
     googleapis-common-protos-types (1.14.0)
       google-protobuf (~> 3.18)
     grpc (1.62.0)
+      google-protobuf (~> 3.25)
+      googleapis-common-protos-types (~> 1.0)
+    grpc (1.62.0-aarch64-linux)
+      google-protobuf (~> 3.25)
+      googleapis-common-protos-types (~> 1.0)
+    grpc (1.62.0-arm64-darwin)
+      google-protobuf (~> 3.25)
+      googleapis-common-protos-types (~> 1.0)
+    grpc (1.62.0-x86-linux)
+      google-protobuf (~> 3.25)
+      googleapis-common-protos-types (~> 1.0)
+    grpc (1.62.0-x86_64-darwin)
+      google-protobuf (~> 3.25)
+      googleapis-common-protos-types (~> 1.0)
+    grpc (1.62.0-x86_64-linux)
       google-protobuf (~> 3.25)
       googleapis-common-protos-types (~> 1.0)
     grpc-tools (1.62.0)
@@ -31,15 +51,19 @@ GEM
     rspec-support (3.13.1)
 
 PLATFORMS
+  aarch64-linux
+  arm64-darwin
   ruby
+  x86-linux
+  x86_64-darwin
+  x86_64-linux
 
 DEPENDENCIES
-  bundler (~> 1.17)
   dapr-client!
   grpc
   grpc-tools
-  rake (>= 12.3.3)
-  rspec (~> 3.0)
+  rake
+  rspec
 
 BUNDLED WITH
-   1.17.3
+   2.5.9
