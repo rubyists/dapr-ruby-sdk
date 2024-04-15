@@ -1,4 +1,6 @@
-require_relative "./app_callback_service"
+# frozen_string_literal: true
+
+require_relative './app_callback_service'
 
 $stdout.sync = true
 

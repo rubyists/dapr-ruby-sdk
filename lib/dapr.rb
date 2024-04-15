@@ -1,1 +1,3 @@
-require "dapr/version"
+# frozen_string_literal: true
+
+require 'dapr/version'
