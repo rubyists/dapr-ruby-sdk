@@ -8,5 +8,6 @@
 /tmp/
 /components/
 
+Gemfile.lock
 # rspec failure tracking
 .rspec_status
