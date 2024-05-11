@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 module Dapr
-  VERSION = '0.4.5'
+  VERSION = '1.13.2'
 end
