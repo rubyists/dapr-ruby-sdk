@@ -14,6 +14,7 @@ Gem::Specification.new do |spec|
   spec.description   = 'Dapr SDK for Ruby'
   spec.homepage      = 'https://github.com/rubyists/dapr-ruby-sdk'
   spec.license       = 'MIT'
+  spec.required_ruby_version = '>= 3.3.0'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
