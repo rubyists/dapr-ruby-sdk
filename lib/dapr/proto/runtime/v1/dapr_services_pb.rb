@@ -52,6 +52,9 @@ module Dapr
             rpc :PublishEvent, ::Dapr::Proto::Runtime::V1::PublishEventRequest, ::Google::Protobuf::Empty
             # Bulk Publishes multiple events to the specified topic.
             rpc :BulkPublishEventAlpha1, ::Dapr::Proto::Runtime::V1::BulkPublishRequest, ::Dapr::Proto::Runtime::V1::BulkPublishResponse
+            # SubscribeTopicEventsAlpha1 subscribes to a PubSub topic and receives topic
+            # events from it.
+            rpc :SubscribeTopicEventsAlpha1, stream(::Dapr::Proto::Runtime::V1::SubscribeTopicEventsRequestAlpha1), stream(::Dapr::Proto::Runtime::V1::SubscribeTopicEventsResponseAlpha1)
             # Invokes binding data to specific output bindings
             rpc :InvokeBinding, ::Dapr::Proto::Runtime::V1::InvokeBindingRequest, ::Dapr::Proto::Runtime::V1::InvokeBindingResponse
             # Gets secrets from secret stores.
@@ -140,6 +143,12 @@ module Dapr
             rpc :RaiseEventWorkflowBeta1, ::Dapr::Proto::Runtime::V1::RaiseEventWorkflowRequest, ::Google::Protobuf::Empty
             # Shutdown the sidecar
             rpc :Shutdown, ::Dapr::Proto::Runtime::V1::ShutdownRequest, ::Google::Protobuf::Empty
+            # Create and schedule a job
+            rpc :ScheduleJobAlpha1, ::Dapr::Proto::Runtime::V1::ScheduleJobRequest, ::Dapr::Proto::Runtime::V1::ScheduleJobResponse
+            # Gets a scheduled job
+            rpc :GetJobAlpha1, ::Dapr::Proto::Runtime::V1::GetJobRequest, ::Dapr::Proto::Runtime::V1::GetJobResponse
+            # Delete a job
+            rpc :DeleteJobAlpha1, ::Dapr::Proto::Runtime::V1::DeleteJobRequest, ::Dapr::Proto::Runtime::V1::DeleteJobResponse
           end
 
           Stub = Service.rpc_stub_class

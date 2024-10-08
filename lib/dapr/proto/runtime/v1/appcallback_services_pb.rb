@@ -80,6 +80,8 @@ module Dapr
 
             # Subscribes bulk events from Pubsub
             rpc :OnBulkTopicEventAlpha1, ::Dapr::Proto::Runtime::V1::TopicEventBulkRequest, ::Dapr::Proto::Runtime::V1::TopicEventBulkResponse
+            # Sends job back to the app's endpoint at trigger time.
+            rpc :OnJobEventAlpha1, ::Dapr::Proto::Runtime::V1::JobEventRequest, ::Dapr::Proto::Runtime::V1::JobEventResponse
           end
 
           Stub = Service.rpc_stub_class
